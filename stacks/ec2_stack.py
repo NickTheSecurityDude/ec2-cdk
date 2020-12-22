@@ -16,5 +16,8 @@ class EC2Stack(core.Stack):
     # allow SSH
     my_ec2.connections.allow_from_any_ipv4(ec2.Port.tcp(22),"Internet access SSH")
 
+    # add userdata
+    my_ec2.user_data.add_commands("wget https://inspector-agent.amazonaws.com/linux/latest/install","bash install")
+
     # add inspector tag
     core.Tags.of(my_ec2).add("inspector","True")
