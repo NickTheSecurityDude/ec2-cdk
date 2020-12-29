@@ -12,3 +12,9 @@ cdk bootstrap aws://acct-id/region
 cdk ls
 cdk synth
 cdk deploy```
+
+(c) Copyright 2020 - NickTheSecurityDude
+
+Disclaimer:
+For informational/educational purposes only. Bugs are likely and can be reported on github.
+Using this will incur AWS charges.
