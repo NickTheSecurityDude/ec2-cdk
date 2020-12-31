@@ -11,7 +11,8 @@ export AWS_PROFILE="your-profile"
 cdk bootstrap aws://acct-id/region
 cdk ls
 cdk synth
-cdk deploy```
+cdk deploy
+```
 
 (c) Copyright 2020 - NickTheSecurityDude
 
